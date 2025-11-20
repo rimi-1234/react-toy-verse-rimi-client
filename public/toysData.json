@@ -1,0 +1,74 @@
+[
+    {
+        "toyId": 1,
+        "toyName": "Lego Classic Bricks",
+        "sellerName": "Toys R Us Local",
+        "sellerEmail": "contact@toysruslocal.com",
+        "price": 49.99,
+        "rating": 4.7,
+        "availableQuantity": 75,
+        "description": "A timeless set of colorful Lego bricks that encourages creativity and problem-solving. Kids can build anything they imagine, from houses to vehicles. Includes a variety of brick shapes and colors to spark imaginative play, develop fine motor skills, and enhance spatial awareness. Ideal for children aged 4 and up, perfect for both solo play and group activities, fostering collaboration and storytelling.",
+        "pictureURL": "https://i.ibb.co/G3d3mxPZ/flat-lay-candy-blocks-with-copy-space.jpgg",
+        "subCategory": "Building Blocks"
+    },
+    {
+        "toyId": 2,
+        "toyName": "Plush Teddy Bear",
+        "sellerName": "Cuddle World",
+        "sellerEmail": "hello@cuddleworld.com",
+        "price": 29.99,
+        "rating": 4.8,
+        "availableQuantity": 50,
+        "description": "A super-soft teddy bear perfect for hugs, naps, and gifts. Loved by kids of all ages. Crafted with high-quality plush fabric, this bear is gentle on sensitive skin and durable for years of cuddles. Its adorable design and huggable size make it an ideal companion for bedtime, travel, or imaginative play. Perfect for birthdays, holidays, or simply a comforting friend for children.",
+        "pictureURL": "https://i.ibb.co/5xtNCzRx/beautiful-roses-with-cute-teddy-bear.jpg",
+        "subCategory": "Stuffed Toys"
+    },
+    {
+        "toyId": 3,
+        "toyName": "Remote Control Car",
+        "sellerName": "Speedy Wheels",
+        "sellerEmail": "support@speedywheels.com",
+        "price": 59.99,
+        "rating": 4.5,
+        "availableQuantity": 30,
+        "description": "A high-speed rechargeable RC car perfect for indoor and outdoor fun. Comes with LED headlights. Features responsive controls for precise maneuvering, durable design to withstand collisions, and a rechargeable battery for extended playtime. Kids can race with friends, perform stunts, or explore obstacle courses. Recommended for ages 6 and up, combining excitement, learning, and hand-eye coordination.",
+        "pictureURL": "https://i.ibb.co/twGBg23t/RCCar.jpg",
+        "subCategory": "Electronics"
+    },
+    {
+        "toyId": 5,
+        "toyName": "Barbie Dream House",
+        "sellerName": "Doll Universe",
+        "sellerEmail": "sales@dolluniverse.com",
+        "price": 99.99,
+        "rating": 4.9,
+        "availableQuantity": 20,
+        "description": "A luxury 3-story Barbie Dream House with furniture and accessories for endless storytelling fun. Includes detailed rooms, working elevator, and multiple themed furniture sets. Encourages imaginative play, creativity, and role-playing. Perfect for solo or group play, kids can host parties, explore different rooms, and create elaborate storylines. Recommended for children aged 3 and up, offering hours of interactive entertainment.",
+        "pictureURL": "https://i.ibb.co.com/CKzXpr1y/10226957.jpg",
+        "subCategory": "Dolls & Accessories"
+    },
+    {
+        "toyId": 6,
+        "toyName": "Kids Musical Keyboard",
+        "sellerName": "Melody Makers",
+        "sellerEmail": "music@melodymakers.com",
+        "price": 44.99,
+        "rating": 4.4,
+        "availableQuantity": 45,
+        "description": "Interactive electronic keyboard with multiple sounds, rhythms, and recording options. Features colorful keys, built-in songs, and adjustable volume to encourage musical exploration. Helps develop rhythm, coordination, and creativity. Suitable for beginners and young musicians, making it a perfect educational toy for learning notes, creating melodies, and enjoying hours of musical fun.",
+        "pictureURL": "https://i.ibb.co.com/8LZTXm6n/9674078.jpg",
+        "subCategory": "Musical Toys"
+    },
+    {
+        "toyId": 7,
+        "toyName": "Hot Wheels Track Set",
+        "sellerName": "Speed Racers",
+        "sellerEmail": "contact@speedracers.com",
+        "price": 39.99,
+        "rating": 4.6,
+        "availableQuantity": 35,
+        "description": "Exciting Hot Wheels track set with loops, jumps, and cars for endless racing fun. Includes multiple track pieces and two Hot Wheels cars to create custom racing circuits. Encourages problem-solving, creativity, and hand-eye coordination. Kids can compete with friends or enjoy solo play, experimenting with different layouts, loops, and speed challenges. Ideal for children aged 5 and up who love action-packed adventures.",
+        "pictureURL": "https://i.ibb.co.com/XfPhmVhT/8530728.jpg",
+        "subCategory": "Vehicles & Tracks"
+    }
+]
