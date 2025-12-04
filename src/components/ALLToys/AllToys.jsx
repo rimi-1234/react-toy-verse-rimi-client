@@ -83,11 +83,11 @@ const AllToys = () => {
       </motion.div>
 
       {/* Grid: Categories + Toys */}
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
 
-        {/* Category Buttons - span 1 */}
+        {/* Category Buttons */}
         <motion.div
-          className="col-span-1 sticky flex flex-col gap-3"
+          className="col-span-1 md:sticky md:top-[80px] h-fit flex flex-col gap-3"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -95,10 +95,10 @@ const AllToys = () => {
           {categories.map((cat, idx) => (
             <button
               key={idx}
-              className={`px-4 py-2  rounded-full border font-semibold transition shadow-sm hover:shadow-lg ${category === cat
-                ? "bg-primary text-white border-primary shadow-lg"
-                : "bg-white text-gray-700 border-gray-300 hover:bg-primary hover:text-white"
-              }`}
+              className={`px-4 py-2 rounded-full border font-semibold transition shadow-sm hover:shadow-lg ${category === cat
+                  ? "bg-primary text-white border-primary shadow-lg"
+                  : "bg-white text-gray-700 border-gray-300 hover:bg-primary hover:text-white"
+                }`}
               onClick={() => setCategory(cat)}
             >
               {cat}
@@ -106,8 +106,8 @@ const AllToys = () => {
           ))}
         </motion.div>
 
-        {/* Filtered Toys Grid - span 3 */}
-        <div className="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Filtered Toys */}
+        <div className="col-span-1 md:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredToys.length > 0 ? (
             filteredToys.map((toy, index) => (
               <motion.div
@@ -115,7 +115,7 @@ const AllToys = () => {
                 className="h-[400px]"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2, duration: 0.8 }}
+                transition={{ delay: index * 0.1, duration: 0.8 }}
                 whileHover={{ scale: 1.03, y: -3, transition: { duration: 0.3 } }}
               >
                 <ToyCard toy={toy} />
@@ -129,6 +129,8 @@ const AllToys = () => {
         </div>
 
       </div>
+
+
     </div>
   );
 };

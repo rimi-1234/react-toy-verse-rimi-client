@@ -15,8 +15,16 @@
     "ageRange": "4+ Years",
     "subCategory": "Building Blocks",
     "pieceCount": 650,
-    "materials": ["ABS Plastic"],
-    "tags": ["lego", "creative", "blocks", "STEM", "construction"],
+    "materials": [
+      "ABS Plastic"
+    ],
+    "tags": [
+      "lego",
+      "creative",
+      "blocks",
+      "STEM",
+      "construction"
+    ],
     "dimensions": {
       "boxWidth": "12.1 in",
       "boxHeight": "10.3 in",
@@ -35,10 +43,10 @@
       "Idea booklet",
       "Wheel and window elements"
     ],
-    "pictureURL": "https://i.ibb.co/G3d3mxPZ/flat-lay-candy-blocks-with-copy-space.jpg",
+    "pictureURL": "https://i.ibb.co.com/yFt77cyH/brick.jpg",
     "galleryImages": [
-      "https://i.ibb.co/n0Q2qmn/legobricks1.jpg",
-      "https://i.ibb.co/rwnbDnK/legobricks2.jpg"
+      "https://i.ibb.co.com/cKfBgMK7/brick1.jpg",
+      "https://i.ibb.co.com/67CjZgv5/10713-Prod.png"
     ],
     "shipping": {
       "isFreeShipping": true,
@@ -50,7 +58,6 @@
     },
     "createdAt": "2025-01-15T10:00:00Z"
   },
-
   {
     "toyId": 2,
     "toyName": "Plush Teddy Bear",
@@ -66,9 +73,21 @@
     "stockStatus": "In Stock",
     "ageRange": "1+ Years",
     "subCategory": "Stuffed Toys",
-    "materials": ["Premium Plush Fabric", "Hypoallergenic Cotton"],
-    "colors": ["Brown", "Cream"],
-    "tags": ["plush", "teddy", "soft", "gift", "cute"],
+    "materials": [
+      "Premium Plush Fabric",
+      "Hypoallergenic Cotton"
+    ],
+    "colors": [
+      "Brown",
+      "Cream"
+    ],
+    "tags": [
+      "plush",
+      "teddy",
+      "soft",
+      "gift",
+      "cute"
+    ],
     "dimensions": {
       "height": "14 in",
       "width": "9 in",
@@ -84,10 +103,10 @@
     "whatsInsideTheBox": [
       "1 Plush Teddy Bear"
     ],
-    "pictureURL": "https://i.ibb.co/5xtNCzRx/beautiful-roses-with-cute-teddy-bear.jpg",
+    "pictureURL": "https://i.ibb.co.com/HTS03Yzs/cat.jpg",
     "galleryImages": [
-      "https://i.ibb.co/3y8xNpX/teddy1.jpg",
-      "https://i.ibb.co/4ZqY2Fp/teddy2.jpg"
+      "https://i.ibb.co.com/fd557Jwh/cat1.jpg",
+      "https://i.ibb.co.com/KxL40WJ8/cat2.jpg"
     ],
     "shipping": {
       "isFreeShipping": false,
@@ -99,7 +118,6 @@
     },
     "createdAt": "2025-01-16T09:00:00Z"
   },
-
   {
     "toyId": 3,
     "toyName": "Remote Control Car",
@@ -117,8 +135,17 @@
     "subCategory": "Electronics",
     "batteryLife": "30 minutes",
     "chargingTime": "1.5 hours",
-    "materials": ["ABS Plastic", "Metal Frame"],
-    "tags": ["rc", "car", "remote", "vehicle", "electronics"],
+    "materials": [
+      "ABS Plastic",
+      "Metal Frame"
+    ],
+    "tags": [
+      "rc",
+      "car",
+      "remote",
+      "vehicle",
+      "electronics"
+    ],
     "dimensions": {
       "length": "9.5 in",
       "width": "6 in",
@@ -137,10 +164,10 @@
       "Rechargeable Battery",
       "USB Charger"
     ],
-    "pictureURL": "https://i.ibb.co/twGBg23/RCCar.jpg",
+    "pictureURL": "https://i.ibb.co.com/DfqjbDrP/ca2.jpg",
     "galleryImages": [
-      "https://i.ibb.co/ZXHtxxx/rc1.jpg",
-      "https://i.ibb.co/1GBKG89/rc2.jpg"
+      "https://i.ibb.co.com/DfqjbDrP/ca2.jpg",
+      "https://i.ibb.co.com/1BYHSkt/ca3.jpg"
     ],
     "shipping": {
       "isFreeShipping": true,
@@ -152,7 +179,6 @@
     },
     "createdAt": "2025-01-16T09:10:00Z"
   },
-
   {
     "toyId": 5,
     "toyName": "Barbie Dream House",
@@ -168,10 +194,19 @@
     "stockStatus": "Limited Stock",
     "ageRange": "3+ Years",
     "subCategory": "Dolls & Accessories",
-    "materials": ["Plastic", "Fabric"],
+    "materials": [
+      "Plastic",
+      "Fabric"
+    ],
     "floors": 3,
     "rooms": 7,
-    "tags": ["barbie", "doll", "house", "dreamhouse", "kids"],
+    "tags": [
+      "barbie",
+      "doll",
+      "house",
+      "dreamhouse",
+      "kids"
+    ],
     "dimensions": {
       "height": "3.5 ft",
       "width": "4 ft",
@@ -189,10 +224,10 @@
       "Furniture set",
       "Accessories pack"
     ],
-    "pictureURL": "https://i.ibb.co/CKzXpr1/10226957.jpg",
+    "pictureURL": "https://i.ibb.co.com/mVYx0Dx8/Dll.jpg",
     "galleryImages": [
-      "https://i.ibb.co/y6rSFHg/barbie1.jpg",
-      "https://i.ibb.co/X8VfFXG/barbie2.jpg"
+      "https://i.ibb.co.com/pj02p8Pp/Dll2.jpg",
+      "https://i.ibb.co.com/LdQRLnqF/Dll3.jpg"
     ],
     "shipping": {
       "isFreeShipping": true,
@@ -204,7 +239,6 @@
     },
     "createdAt": "2025-01-16T10:00:00Z"
   },
-
   {
     "toyId": 6,
     "toyName": "Kids Musical Keyboard",
@@ -221,8 +255,16 @@
     "ageRange": "3+ Years",
     "subCategory": "Musical Toys",
     "keysCount": 32,
-    "materials": ["Plastic", "Electronic Components"],
-    "tags": ["music", "keyboard", "kids", "sound"],
+    "materials": [
+      "Plastic",
+      "Electronic Components"
+    ],
+    "tags": [
+      "music",
+      "keyboard",
+      "kids",
+      "sound"
+    ],
     "dimensions": {
       "length": "18 in",
       "width": "5 in",
@@ -239,10 +281,10 @@
       "Kids Keyboard",
       "Power Cable"
     ],
-    "pictureURL": "https://i.ibb.co/8LZTXm6/9674078.jpg",
+    "pictureURL": "https://i.ibb.co.com/NP3CXYx/key.jpg",
     "galleryImages": [
-      "https://i.ibb.co/LgwFqPf/key1.jpg",
-      "https://i.ibb.co/gvF76Y5/key2.jpg"
+      "https://i.ibb.co.com/PsdLmQ2d/key2.jpg",
+      "https://i.ibb.co.com/rWgmKgQ/key3.jpg"
     ],
     "shipping": {
       "isFreeShipping": false,
@@ -254,7 +296,6 @@
     },
     "createdAt": "2025-01-16T12:00:00Z"
   },
-
   {
     "toyId": 7,
     "toyName": "Hot Wheels Track Set",
@@ -270,9 +311,17 @@
     "stockStatus": "In Stock",
     "ageRange": "5+ Years",
     "subCategory": "Vehicles & Tracks",
-    "materials": ["Plastic", "Metal Car Components"],
+    "materials": [
+      "Plastic",
+      "Metal Car Components"
+    ],
     "trackLength": "12 ft",
-    "tags": ["hot wheels", "racing", "cars", "track"],
+    "tags": [
+      "hot wheels",
+      "racing",
+      "cars",
+      "track"
+    ],
     "dimensions": {
       "boxWidth": "15 in",
       "boxHeight": "10 in",
@@ -289,10 +338,10 @@
       "Track pieces",
       "2 Die-cast cars"
     ],
-    "pictureURL": "https://i.ibb.co/XfPhmVh/8530728.jpg",
+    "pictureURL": "https://i.ibb.co.com/vvZLWnbn/do2.jpg",
     "galleryImages": [
-      "https://i.ibb.co/tZX0tVx/hw1.jpg",
-      "https://i.ibb.co/cLZYSdP/hw2.jpg"
+      "https://i.ibb.co.com/5Xj5ZcC2/do3.jpg",
+      "https://i.ibb.co.com/67r98PGx/hot-wheels-criss-cross.jpg"
     ],
     "shipping": {
       "isFreeShipping": true,
@@ -304,7 +353,7 @@
     },
     "createdAt": "2025-01-16T13:30:00Z"
   },
-    {
+  {
     "toyId": 8,
     "toyName": "Interactive Robot Dog",
     "brand": "RoboPets",
@@ -319,14 +368,23 @@
     "stockStatus": "In Stock",
     "ageRange": "5+ Years",
     "subCategory": "Electronic Toys",
-    "materials": ["Plastic", "Electronic Components"],
+    "materials": [
+      "Plastic",
+      "Electronic Components"
+    ],
     "dimensions": {
       "length": "10 in",
       "width": "6 in",
       "height": "8 in",
       "weight": "0.9 kg"
     },
-    "tags": ["robot", "interactive", "electronic", "pet", "smart toy"],
+    "tags": [
+      "robot",
+      "interactive",
+      "electronic",
+      "pet",
+      "smart toy"
+    ],
     "description": "A smart robotic dog that responds to touch, sound, and voice commands. Moves, barks, and performs tricks while teaching kids about responsibility and STEM concepts.",
     "keyFeatures": [
       "Voice recognition and responsive actions",
@@ -339,10 +397,10 @@
       "USB Charging Cable",
       "Instruction Manual"
     ],
-    "pictureURL": "https://i.ibb.co/3f1D7n2/robot-dog.jpg",
+    "pictureURL": "https://i.ibb.co.com/whV9y0Gb/Dog.jpg",
     "galleryImages": [
-      "https://i.ibb.co/4F2jM91/robot-dog1.jpg",
-      "https://i.ibb.co/2c3fP8G/robot-dog2.jpg"
+      "https://i.ibb.co.com/cRWgxyH/Dog2.jpg",
+"https://i.ibb.co.com/9Ht8m4nD/Dog3.jpg"
     ],
     "shipping": {
       "isFreeShipping": true,
@@ -354,7 +412,6 @@
     },
     "createdAt": "2025-01-17T09:00:00Z"
   },
-
   {
     "toyId": 9,
     "toyName": "Wooden Puzzle Castle",
@@ -370,8 +427,17 @@
     "stockStatus": "In Stock",
     "ageRange": "6+ Years",
     "subCategory": "Educational Toys",
-    "materials": ["Wood", "Non-toxic Paint"],
-    "tags": ["puzzle", "wooden toy", "castle", "educational", "STEM"],
+    "materials": [
+      "Wood",
+      "Non-toxic Paint"
+    ],
+    "tags": [
+      "puzzle",
+      "wooden toy",
+      "castle",
+      "educational",
+      "STEM"
+    ],
     "dimensions": {
       "length": "12 in",
       "width": "8 in",
@@ -389,10 +455,10 @@
       "Wooden Puzzle Pieces",
       "Instruction Sheet"
     ],
-    "pictureURL": "https://i.ibb.co/WgD6cQq/wooden-castle.jpg",
+    "pictureURL": "https://i.ibb.co.com/VY3dz02c/castle4.jpg",
     "galleryImages": [
-      "https://i.ibb.co/7k8KcQ4/wooden-castle1.jpg",
-      "https://i.ibb.co/QN7x2zP/wooden-castle2.jpg"
+     "https://i.ibb.co.com/xtphn38h/castle.jpg",
+"https://i.ibb.co.com/QvjR86qw/castle2.jpg"
     ],
     "shipping": {
       "isFreeShipping": true,
@@ -404,7 +470,6 @@
     },
     "createdAt": "2025-01-17T10:30:00Z"
   },
-
   {
     "toyId": 10,
     "toyName": "Kids Art & Craft Kit",
@@ -420,8 +485,19 @@
     "stockStatus": "In Stock",
     "ageRange": "3+ Years",
     "subCategory": "Arts & Crafts",
-    "materials": ["Paper", "Non-toxic Paint", "Glue", "Wooden Sticks"],
-    "tags": ["art", "craft", "creativity", "drawing", "painting"],
+    "materials": [
+      "Paper",
+      "Non-toxic Paint",
+      "Glue",
+      "Wooden Sticks"
+    ],
+    "tags": [
+      "art",
+      "craft",
+      "creativity",
+      "drawing",
+      "painting"
+    ],
     "dimensions": {
       "length": "14 in",
       "width": "10 in",
@@ -442,10 +518,10 @@
       "Stencils",
       "Craft Tools"
     ],
-    "pictureURL": "https://i.ibb.co/9wH8Y3k/art-craft-kit.jpg",
+    "pictureURL": "https://i.ibb.co.com/mrtqt2bB/kidart2.jpg",
     "galleryImages": [
-      "https://i.ibb.co/4N9m8vM/art-craft1.jpg",
-      "https://i.ibb.co/WfxP7mK/art-craft2.jpg"
+      "https://i.ibb.co.com/jkm4fKF1/kidart.jpg",
+" https://i.ibb.co.com/Y7QJkH9m/kidart1.jpg"
     ],
     "shipping": {
       "isFreeShipping": true,
@@ -457,5 +533,4 @@
     },
     "createdAt": "2025-01-17T11:00:00Z"
   }
-  
 ]

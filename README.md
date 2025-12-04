@@ -7,7 +7,7 @@
 ToyVerse is a dynamic online platform that allows users to browse, explore, and purchase toys for kids. It is designed for families to easily discover local toy sellers, view detailed toy information, and leave feedback for toys they are interested in buying.
 
 ## Live URL
-[Live Demo](https://toy-verse-rimi-1234.netlify.app)  
+[Live Demo](https://farhana-toy-verse-project.netlify.app/)  
 
 ## Key Features
 - **User Authentication:** Users can sign up, log in, and log out using email/password or Google login.  

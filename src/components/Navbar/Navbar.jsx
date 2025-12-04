@@ -23,31 +23,32 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-base-100 sticky top-0 shadow-md px-4 py-4 md:px-8 z-50">
-
-      <div className="flex justify-between items-center">
-        {/* Brand */}
-        <NavLink to="/" className="text-3xl font-bold text-primary">
+    <nav className="bg-base-100 sticky top-0 shadow-md px-4 py-4 md:px-6 lg:px-10 z-50">
+      <div className="flex justify-between items-center relative">
+        {/* Logo */}
+        <NavLink to="/" className="text-2xl md:text-3xl font-bold text-primary">
           ToyVerse
         </NavLink>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-6">
+        {/* Desktop + Tablet Menu */}
+        <div className="hidden md:flex flex-wrap md:gap-x-6 md:gap-y-2 lg:flex-nowrap items-center
+                        md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2
+                        lg:static lg:translate-x-0 lg:translate-y-0">
           {navLinks.map((link) => (
             <NavLink
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
-                isActive
+                (isActive
                   ? "text-primary font-semibold"
-                  : "text-base-content hover:text-primary"
+                  : "text-base-content hover:text-primary") +
+                " text-base md:text-lg lg:text-base"
               }
             >
               {link.name}
             </NavLink>
           ))}
 
-          {/* Authenticated Links */}
           {user && (
             <>
               <NavLink
@@ -60,6 +61,7 @@ const Navbar = () => {
               >
                 MyCart
               </NavLink>
+
               <NavLink
                 to="/profile"
                 className={({ isActive }) =>
@@ -74,8 +76,8 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* User Section (Desktop) */}
-        <div className="hidden md:flex items-center gap-4">
+        {/* User Section */}
+        <div className="hidden md:flex items-center md:gap-3 lg:gap-4">
           {loading ? (
             <div className="flex items-center gap-2 text-primary">
               <span className="loading loading-spinner loading-md"></span>
@@ -83,37 +85,35 @@ const Navbar = () => {
             </div>
           ) : (
             <>
-              {/* Profile Image with Hover Name */}
+              {/* Profile Image */}
               <div className="relative group">
                 <img
-                  className="w-12 h-12 rounded-full cursor-pointer border-2 border-transparent hover:border-primary transition"
+                  className="w-10 h-10 lg:w-12 lg:h-12 rounded-full cursor-pointer border-2 border-transparent hover:border-primary transition"
                   src={user ? user.photoURL : userIcon}
                   alt="User"
                 />
                 {user && (
-                  <span
-                    className="absolute flex items-center bottom-full -top-2 -left-[65px] mb-2
-                    bg-gradient-to-r from-pink-500 to-rose-400 text-white text-sm font-semibold
-                    px-3 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100
-                    transition-opacity duration-300 whitespace-nowrap"
-                  >
+                  <span className="absolute left-1/2 transform -translate-x-1/2 -bottom-14
+                                   bg-gradient-to-r from-pink-500 to-rose-400 text-white text-sm
+                                   px-3 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition">
                     {user.displayName}
                   </span>
                 )}
               </div>
 
-              {/* Login / Logout Button */}
+              {/* Login / Logout */}
               {user ? (
                 <button
                   onClick={handleLogOut}
-                  className="btn btn-primary px-10"
+                  className="btn btn-primary md:px-6 lg:px-10 md:py-2"
                 >
                   LogOut
                 </button>
               ) : (
                 <Link
                   to="/auth/login"
-                  className="px-10 py-2 rounded-lg bg-[#EB1551] hover:bg-[#C71145] text-white font-semibold transition-colors duration-200"
+                  className="px-8 py-2 rounded-lg bg-[#EB1551] hover:bg-[#C71145]
+                             text-white font-semibold md:text-sm lg:text-base"
                 >
                   Login/Register
                 </Link>
@@ -122,115 +122,91 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-2xl font-bold"
-            aria-label="Toggle Menu"
-          >
-            ☰
-          </button>
-        </div>
+        {/* Mobile Hamburger */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden text-3xl font-bold"
+        >
+          ☰
+        </button>
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden mt-2 flex flex-col gap-2 bg-base-100 p-4 rounded-lg shadow-lg">
-          {loading ? (
-            <div className="flex items-center justify-center gap-2 text-gray-600">
-              <span className="loading loading-spinner loading-md text-primary"></span>
-              <p>Loading...</p>
-            </div>
-          ) : (
-            <>
-              {/* User Section */}
-              <div className="w-full flex flex-col items-center gap-2 justify-center">
-                <div className="my-2">
-                  <img
-                    className="w-12 rounded-full"
-                    src={user ? user.photoURL : userIcon}
-                    alt="User"
-                  />
-                </div>
-                {user && (
-                  <div className="w-full mb-1 text-center">
-                    <span className="bg-gradient-to-r from-pink-500 to-rose-400 text-white p-2 rounded">
-                      {user.displayName}
-                    </span>
-                  </div>
-                )}
-              </div>
+        <div className="md:hidden mt-3 bg-base-100 p-4 rounded-lg shadow-lg flex flex-col gap-3">
+          {/* User Section */}
+          <div className="flex flex-col items-center gap-2">
+            <img
+              className="w-12 rounded-full"
+              src={user ? user.photoURL : userIcon}
+              alt="User"
+            />
+            {user && (
+              <span className="bg-gradient-to-r from-pink-500 to-rose-400 text-white px-3 py-1 rounded">
+                {user.displayName}
+              </span>
+            )}
+          </div>
 
-              {/* Navigation Links */}
-              <div className="flex flex-col items-center gap-2">
-                {navLinks.map((link) => (
-                  <NavLink
-                    key={link.name}
-                    to={link.path}
-                    onClick={() => setIsOpen(false)}
-                    className={({ isActive }) =>
-                      isActive
-                        ? "text-primary font-semibold"
-                        : "text-base-content hover:text-primary"
-                    }
-                  >
-                    {link.name}
-                  </NavLink>
-                ))}
+          {/* Navigation Links */}
+          <div className="flex flex-col items-center gap-2">
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.name}
+                to={link.path}
+                onClick={() => setIsOpen(false)}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-primary font-semibold"
+                    : "text-base-content hover:text-primary"
+                }
+              >
+                {link.name}
+              </NavLink>
+            ))}
 
-                {user && (
-                  <>
-                    <NavLink
-                      to="/my-cart"
-                      onClick={() => setIsOpen(false)}
-                      className={({ isActive }) =>
-                        isActive
-                          ? "text-primary font-semibold"
-                          : "text-base-content hover:text-primary"
-                      }
-                    >
-                      MyCart
-                    </NavLink>
-                    <NavLink
-                      to="/profile"
-                      onClick={() => setIsOpen(false)}
-                      className={({ isActive }) =>
-                        isActive
-                          ? "text-primary font-semibold"
-                          : "text-base-content hover:text-primary"
-                      }
-                    >
-                      My Profile
-                    </NavLink>
-                  </>
-                )}
-              </div>
+            {user && (
+              <>
+                <NavLink
+                  to="/my-cart"
+                  onClick={() => setIsOpen(false)}
+                  className="hover:text-primary"
+                >
+                  MyCart
+                </NavLink>
+                <NavLink
+                  to="/profile"
+                  onClick={() => setIsOpen(false)}
+                  className="hover:text-primary"
+                >
+                  My Profile
+                </NavLink>
+              </>
+            )}
+          </div>
 
-              {/* Auth Buttons */}
-              <div className="flex items-center gap-2 mt-2">
-                {user ? (
-                  <button
-                    onClick={() => {
-                      handleLogOut();
-                      setIsOpen(false);
-                    }}
-                    className="px-10 py-2 w-full rounded-lg text-center bg-[#EB1551] hover:bg-[#C71145] text-white font-semibold transition-colors duration-200"
-                  >
-                    LogOut
-                  </button>
-                ) : (
-                  <Link
-                    to="/auth/login"
-                    onClick={() => setIsOpen(false)}
-                    className="px-10 py-2 w-full text-center rounded-lg bg-[#EB1551] hover:bg-[#C71145] text-white font-semibold transition-colors duration-200"
-                  >
-                    Login/Register
-                  </Link>
-                )}
-              </div>
-            </>
-          )}
+          {/* Auth Buttons */}
+          <div className="mt-2 w-full">
+            {user ? (
+              <button
+                onClick={() => {
+                  handleLogOut();
+                  setIsOpen(false);
+                }}
+                className="w-full px-10 py-2 rounded-lg bg-[#EB1551] hover:bg-[#C71145] text-white font-semibold"
+              >
+                LogOut
+              </button>
+            ) : (
+              <Link
+                to="/auth/login"
+                onClick={() => setIsOpen(false)}
+                className="w-full flex justify-center px-10 py-2 rounded-lg bg-[#EB1551] hover:bg-[#C71145] text-white font-semibold"
+              >
+                Login/Register
+              </Link>
+            )}
+          </div>
         </div>
       )}
     </nav>
