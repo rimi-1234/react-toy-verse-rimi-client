@@ -13,27 +13,44 @@ import MyProfile from "../Pages/MyProfile/MyProfile"
 import MyCart from "../components/MyCart/MyCart"
 import ForgotPassword from "../Pages/ForgotPassword/ForgotPassword"
 import ErrorPages from "../Pages/ErrorPages/ErrorPages"
+import AllToys from "../components/ALLToys/AllToys"
+import Contact from "../components/Contact/Contact"
+import About from "../components/About/About"
+import Services from "../components/Services/Services"
 
 
 const router = createBrowserRouter([
-  {
-    path: '/',
-    Component: MainLayout,
-
+   {
+    path: "/",
+    element: <MainLayout />,
     children: [
       {
-        path: '/',
-        Component: Home,
-
+        path: "/", // Home page
+        element: <Home />,
       },
       {
-        path: '/profile',
-        element:
+        path: "/all-toys",
+        element: <AllToys />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/services",
+        element: <Services />,
+      },
+      {
+        path: "/profile",
+        element: (
           <PrivateRouter>
-            <MyProfile></MyProfile>
-
-          </PrivateRouter >
-
+            <MyProfile />
+          </PrivateRouter>
+        ),
       },
       {
         path: "/my-cart",
@@ -43,7 +60,6 @@ const router = createBrowserRouter([
           </PrivateRouter>
         ),
       },
-
     ],
   },
   {
@@ -67,11 +83,11 @@ const router = createBrowserRouter([
   {
     path: "/toys-details/:id",
     element: (
-      <PrivateRouter>
+  
         <Suspense fallback={<Loading></Loading>}>
           <ToyDetails />
         </Suspense>
-      </PrivateRouter>
+      
     ),
     loader: () => fetch("../toysData.json"),
 

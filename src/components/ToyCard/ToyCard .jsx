@@ -3,6 +3,7 @@ import { use } from "react";
 import { useNavigate } from "react-router";
 import { AuthContext } from "../../Context/AuthContext";
 
+
 const ToyCard = ({ toy }) => {
     const { pictureURL, toyId, toyName, rating, availableQuantity, price } = toy;
     const { user ,setLoading} = use(AuthContext);
@@ -23,45 +24,54 @@ const ToyCard = ({ toy }) => {
     };
     
     return (
-        <div className="card bg-base-100 shadow-lg rounded-xl overflow-hidden hover:scale-105 transition-transform duration-300">
-            <figure className="w-full h-48 bg-gray-100">
-                <img
-                    src={pictureURL}
-                    alt={toyName}
-                    className="w-full h-full object-cover"
-                />
-            </figure>
-            <div className="card-body p-4">
-                <h2
-                    className="card-title text-lg font-bold bg-gradient-to-r from-[#EB1551] via-[#FF5FA8] to-[#FF8DC7] text-transparent bg-clip-text"
-                >
-                    {toyName}
-                </h2>
-                <div className="flex items-center justify-between gap-2 mt-1">
-                    <div className="flex gap-2">
+       <div className="card bg-base-100 shadow-lg rounded-xl overflow-hidden hover:scale-105 transition-transform duration-300 h-full flex flex-col">
+      {/* Image */}
+      <figure className="w-full h-48 md:h-56 lg:h-64 bg-gray-100 overflow-hidden">
+        <img
+          src={pictureURL}
+          alt={toyName}
+          className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-110"
+        />
+      </figure>
 
-                        {Array.from({ length: Math.floor(rating) }).map((_, i) => (
-                            <Star
-                                key={i}
-                                className="w-4 h-4 text-[#EB1551]"
-                                fill="#EB1551"
-                            />
-                        ))}
+      {/* Card Content */}
+      <div className="card-body p-4 flex flex-col flex-1">
+        {/* Title */}
+        <h2 className="card-title text-lg md:text-xl font-bold bg-gradient-to-r from-[#EB1551] via-[#FF5FA8] to-[#FF8DC7] text-transparent bg-clip-text truncate">
+          {toyName}
+        </h2>
 
-                        <span className="text-gray-600 font-semibold ">{rating.toFixed(1)}</span>
-                    </div>
+        {/* Rating + Availability */}
+        <div className="flex justify-between items-center mt-2 text-sm md:text-base">
+          <div className="flex items-center gap-1">
+            {Array.from({ length: Math.floor(rating) }).map((_, i) => (
+              <Star key={i} className="w-4 h-4 text-[#EB1551]" fill="#EB1551" />
+            ))}
+            <span className="text-gray-600 font-semibold">{rating.toFixed(1)}</span>
+          </div>
 
-                    <div className="flex items-center gap-1 text-gray-500 mt-1">
-                        <Package className="w-4 h-4" />
-                        <span>Available: {availableQuantity}</span>
-                    </div>
-                </div>
-                <p className="bg-gradient-to-r from-[#EB1551] via-[#FF5FA8] to-[#FF8DC7] text-transparent bg-clip-text flex items-start font-semibold mt-1">{price.toFixed(2)}Tk</p>
-                <button onClick={handleReadMore} className="btn btn-primary mt-3 w-full">
-                    View More
-                </button>
-            </div>
+          <div className="flex items-center gap-1 text-gray-500">
+            <Package className="w-4 h-4" />
+            <span>{availableQuantity} in stock</span>
+          </div>
         </div>
+
+        {/* Price */}
+        <p className="mt-2 text-lg font-semibold bg-gradient-to-r from-[#EB1551] via-[#FF5FA8] to-[#FF8DC7] text-transparent bg-clip-text">
+          {price.toFixed(2)} Tk
+        </p>
+
+        {/* Button */}
+        <div className="mt-auto">
+          <button
+            onClick={handleReadMore}
+            className="btn btn-primary w-full mt-3 hover:scale-105 transition-transform duration-300"
+          >
+            View More
+          </button>
+        </div>
+      </div>
+    </div>
     );
 };
 

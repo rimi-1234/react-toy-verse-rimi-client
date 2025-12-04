@@ -1,74 +1,461 @@
 [
-    {
-        "toyId": 1,
-        "toyName": "Lego Classic Bricks",
-        "sellerName": "Toys R Us Local",
-        "sellerEmail": "contact@toysruslocal.com",
-        "price": 49.99,
-        "rating": 4.7,
-        "availableQuantity": 75,
-        "description": "A timeless set of colorful Lego bricks that encourages creativity and problem-solving. Kids can build anything they imagine, from houses to vehicles. Includes a variety of brick shapes and colors to spark imaginative play, develop fine motor skills, and enhance spatial awareness. Ideal for children aged 4 and up, perfect for both solo play and group activities, fostering collaboration and storytelling.",
-        "pictureURL": "https://i.ibb.co/G3d3mxPZ/flat-lay-candy-blocks-with-copy-space.jpgg",
-        "subCategory": "Building Blocks"
+  {
+    "toyId": 1,
+    "toyName": "Lego Classic Bricks",
+    "brand": "LEGO",
+    "sellerName": "Toys R Us Local",
+    "sellerEmail": "contact@toysruslocal.com",
+    "price": 49.99,
+    "discount": 5,
+    "finalPrice": 47.49,
+    "rating": 4.7,
+    "reviewsCount": 1321,
+    "availableQuantity": 75,
+    "stockStatus": "In Stock",
+    "ageRange": "4+ Years",
+    "subCategory": "Building Blocks",
+    "pieceCount": 650,
+    "materials": ["ABS Plastic"],
+    "tags": ["lego", "creative", "blocks", "STEM", "construction"],
+    "dimensions": {
+      "boxWidth": "12.1 in",
+      "boxHeight": "10.3 in",
+      "boxDepth": "3.2 in",
+      "weight": "1.1 kg"
     },
-    {
-        "toyId": 2,
-        "toyName": "Plush Teddy Bear",
-        "sellerName": "Cuddle World",
-        "sellerEmail": "hello@cuddleworld.com",
-        "price": 29.99,
-        "rating": 4.8,
-        "availableQuantity": 50,
-        "description": "A super-soft teddy bear perfect for hugs, naps, and gifts. Loved by kids of all ages. Crafted with high-quality plush fabric, this bear is gentle on sensitive skin and durable for years of cuddles. Its adorable design and huggable size make it an ideal companion for bedtime, travel, or imaginative play. Perfect for birthdays, holidays, or simply a comforting friend for children.",
-        "pictureURL": "https://i.ibb.co/5xtNCzRx/beautiful-roses-with-cute-teddy-bear.jpg",
-        "subCategory": "Stuffed Toys"
+    "description": "A timeless set of colorful LEGO bricks designed to spark creativity and imaginative play. Includes a variety of shapes, wheels, windows, and special pieces ideal for building houses, vehicles, and anything a child can imagine. Helps develop spatial awareness, fine motor skills, and problem-solving abilities.",
+    "keyFeatures": [
+      "650+ assorted LEGO bricks",
+      "Compatible with all LEGO Classic collections",
+      "Great for STEM learning and early creativity",
+      "Durable, long-lasting ABS material"
+    ],
+    "whatsInsideTheBox": [
+      "Assorted classic LEGO bricks",
+      "Idea booklet",
+      "Wheel and window elements"
+    ],
+    "pictureURL": "https://i.ibb.co/G3d3mxPZ/flat-lay-candy-blocks-with-copy-space.jpg",
+    "galleryImages": [
+      "https://i.ibb.co/n0Q2qmn/legobricks1.jpg",
+      "https://i.ibb.co/rwnbDnK/legobricks2.jpg"
+    ],
+    "shipping": {
+      "isFreeShipping": true,
+      "estimatedDelivery": "3–6 business days"
     },
-    {
-        "toyId": 3,
-        "toyName": "Remote Control Car",
-        "sellerName": "Speedy Wheels",
-        "sellerEmail": "support@speedywheels.com",
-        "price": 59.99,
-        "rating": 4.5,
-        "availableQuantity": 30,
-        "description": "A high-speed rechargeable RC car perfect for indoor and outdoor fun. Comes with LED headlights. Features responsive controls for precise maneuvering, durable design to withstand collisions, and a rechargeable battery for extended playtime. Kids can race with friends, perform stunts, or explore obstacle courses. Recommended for ages 6 and up, combining excitement, learning, and hand-eye coordination.",
-        "pictureURL": "https://i.ibb.co/twGBg23t/RCCar.jpg",
-        "subCategory": "Electronics"
+    "returnPolicy": {
+      "returnWindow": "15 days",
+      "isReturnable": true
     },
-    {
-        "toyId": 5,
-        "toyName": "Barbie Dream House",
-        "sellerName": "Doll Universe",
-        "sellerEmail": "sales@dolluniverse.com",
-        "price": 99.99,
-        "rating": 4.9,
-        "availableQuantity": 20,
-        "description": "A luxury 3-story Barbie Dream House with furniture and accessories for endless storytelling fun. Includes detailed rooms, working elevator, and multiple themed furniture sets. Encourages imaginative play, creativity, and role-playing. Perfect for solo or group play, kids can host parties, explore different rooms, and create elaborate storylines. Recommended for children aged 3 and up, offering hours of interactive entertainment.",
-        "pictureURL": "https://i.ibb.co.com/CKzXpr1y/10226957.jpg",
-        "subCategory": "Dolls & Accessories"
+    "createdAt": "2025-01-15T10:00:00Z"
+  },
+
+  {
+    "toyId": 2,
+    "toyName": "Plush Teddy Bear",
+    "brand": "Cuddle World",
+    "sellerName": "Cuddle World",
+    "sellerEmail": "hello@cuddleworld.com",
+    "price": 29.99,
+    "discount": 0,
+    "finalPrice": 29.99,
+    "rating": 4.8,
+    "reviewsCount": 890,
+    "availableQuantity": 50,
+    "stockStatus": "In Stock",
+    "ageRange": "1+ Years",
+    "subCategory": "Stuffed Toys",
+    "materials": ["Premium Plush Fabric", "Hypoallergenic Cotton"],
+    "colors": ["Brown", "Cream"],
+    "tags": ["plush", "teddy", "soft", "gift", "cute"],
+    "dimensions": {
+      "height": "14 in",
+      "width": "9 in",
+      "weight": "350 g"
     },
-    {
-        "toyId": 6,
-        "toyName": "Kids Musical Keyboard",
-        "sellerName": "Melody Makers",
-        "sellerEmail": "music@melodymakers.com",
-        "price": 44.99,
-        "rating": 4.4,
-        "availableQuantity": 45,
-        "description": "Interactive electronic keyboard with multiple sounds, rhythms, and recording options. Features colorful keys, built-in songs, and adjustable volume to encourage musical exploration. Helps develop rhythm, coordination, and creativity. Suitable for beginners and young musicians, making it a perfect educational toy for learning notes, creating melodies, and enjoying hours of musical fun.",
-        "pictureURL": "https://i.ibb.co.com/8LZTXm6n/9674078.jpg",
-        "subCategory": "Musical Toys"
+    "description": "A super-soft and cuddly teddy bear perfect for hugs, bedtime, and gifting. Made with hypoallergenic plush fabric, gentle on sensitive skin, and designed for long-lasting comfort.",
+    "keyFeatures": [
+      "Ultra-soft plush fabric",
+      "Hypoallergenic & child-friendly",
+      "Perfect gift item",
+      "Durable stitching"
+    ],
+    "whatsInsideTheBox": [
+      "1 Plush Teddy Bear"
+    ],
+    "pictureURL": "https://i.ibb.co/5xtNCzRx/beautiful-roses-with-cute-teddy-bear.jpg",
+    "galleryImages": [
+      "https://i.ibb.co/3y8xNpX/teddy1.jpg",
+      "https://i.ibb.co/4ZqY2Fp/teddy2.jpg"
+    ],
+    "shipping": {
+      "isFreeShipping": false,
+      "estimatedDelivery": "3–5 business days"
     },
+    "returnPolicy": {
+      "returnWindow": "10 days",
+      "isReturnable": true
+    },
+    "createdAt": "2025-01-16T09:00:00Z"
+  },
+
+  {
+    "toyId": 3,
+    "toyName": "Remote Control Car",
+    "brand": "Speedy Wheels",
+    "sellerName": "Speedy Wheels",
+    "sellerEmail": "support@speedywheels.com",
+    "price": 59.99,
+    "discount": 15,
+    "finalPrice": 50.99,
+    "rating": 4.5,
+    "reviewsCount": 640,
+    "availableQuantity": 30,
+    "stockStatus": "Low Stock",
+    "ageRange": "6+ Years",
+    "subCategory": "Electronics",
+    "batteryLife": "30 minutes",
+    "chargingTime": "1.5 hours",
+    "materials": ["ABS Plastic", "Metal Frame"],
+    "tags": ["rc", "car", "remote", "vehicle", "electronics"],
+    "dimensions": {
+      "length": "9.5 in",
+      "width": "6 in",
+      "height": "4 in"
+    },
+    "description": "A high-speed rechargeable RC car built for racing and stunts. Features LED headlights, responsive controls, and durable construction to withstand tough play sessions.",
+    "keyFeatures": [
+      "High-speed performance",
+      "Rechargeable battery",
+      "LED headlights",
+      "Durable shockproof design"
+    ],
+    "whatsInsideTheBox": [
+      "Remote Car",
+      "Controller",
+      "Rechargeable Battery",
+      "USB Charger"
+    ],
+    "pictureURL": "https://i.ibb.co/twGBg23/RCCar.jpg",
+    "galleryImages": [
+      "https://i.ibb.co/ZXHtxxx/rc1.jpg",
+      "https://i.ibb.co/1GBKG89/rc2.jpg"
+    ],
+    "shipping": {
+      "isFreeShipping": true,
+      "estimatedDelivery": "4–7 business days"
+    },
+    "returnPolicy": {
+      "returnWindow": "7 days",
+      "isReturnable": true
+    },
+    "createdAt": "2025-01-16T09:10:00Z"
+  },
+
+  {
+    "toyId": 5,
+    "toyName": "Barbie Dream House",
+    "brand": "Barbie",
+    "sellerName": "Doll Universe",
+    "sellerEmail": "sales@dolluniverse.com",
+    "price": 99.99,
+    "discount": 12,
+    "finalPrice": 87.99,
+    "rating": 4.9,
+    "reviewsCount": 2300,
+    "availableQuantity": 20,
+    "stockStatus": "Limited Stock",
+    "ageRange": "3+ Years",
+    "subCategory": "Dolls & Accessories",
+    "materials": ["Plastic", "Fabric"],
+    "floors": 3,
+    "rooms": 7,
+    "tags": ["barbie", "doll", "house", "dreamhouse", "kids"],
+    "dimensions": {
+      "height": "3.5 ft",
+      "width": "4 ft",
+      "depth": "1.5 ft"
+    },
+    "description": "A luxurious 3-story Barbie Dream House complete with furniture, accessories, and a working elevator. Designed for immersive storytelling, creativity, and role-playing adventures.",
+    "keyFeatures": [
+      "3 floors and 7 decorated rooms",
+      "Working elevator",
+      "Multiple furniture sets",
+      "Large dollhouse play area"
+    ],
+    "whatsInsideTheBox": [
+      "Dream House",
+      "Furniture set",
+      "Accessories pack"
+    ],
+    "pictureURL": "https://i.ibb.co/CKzXpr1/10226957.jpg",
+    "galleryImages": [
+      "https://i.ibb.co/y6rSFHg/barbie1.jpg",
+      "https://i.ibb.co/X8VfFXG/barbie2.jpg"
+    ],
+    "shipping": {
+      "isFreeShipping": true,
+      "estimatedDelivery": "5–10 business days"
+    },
+    "returnPolicy": {
+      "returnWindow": "20 days",
+      "isReturnable": true
+    },
+    "createdAt": "2025-01-16T10:00:00Z"
+  },
+
+  {
+    "toyId": 6,
+    "toyName": "Kids Musical Keyboard",
+    "brand": "Melody Makers",
+    "sellerName": "Melody Makers",
+    "sellerEmail": "music@melodymakers.com",
+    "price": 44.99,
+    "discount": 8,
+    "finalPrice": 41.39,
+    "rating": 4.4,
+    "reviewsCount": 540,
+    "availableQuantity": 45,
+    "stockStatus": "In Stock",
+    "ageRange": "3+ Years",
+    "subCategory": "Musical Toys",
+    "keysCount": 32,
+    "materials": ["Plastic", "Electronic Components"],
+    "tags": ["music", "keyboard", "kids", "sound"],
+    "dimensions": {
+      "length": "18 in",
+      "width": "5 in",
+      "height": "2 in"
+    },
+    "description": "An interactive electronic keyboard with multiple rhythms, melodies, and learning modes. Perfect for helping kids explore music, improve coordination, and express creativity.",
+    "keyFeatures": [
+      "32 colorful keys",
+      "Built-in songs & rhythms",
+      "Recording feature",
+      "Volume control"
+    ],
+    "whatsInsideTheBox": [
+      "Kids Keyboard",
+      "Power Cable"
+    ],
+    "pictureURL": "https://i.ibb.co/8LZTXm6/9674078.jpg",
+    "galleryImages": [
+      "https://i.ibb.co/LgwFqPf/key1.jpg",
+      "https://i.ibb.co/gvF76Y5/key2.jpg"
+    ],
+    "shipping": {
+      "isFreeShipping": false,
+      "estimatedDelivery": "3–7 business days"
+    },
+    "returnPolicy": {
+      "returnWindow": "10 days",
+      "isReturnable": true
+    },
+    "createdAt": "2025-01-16T12:00:00Z"
+  },
+
+  {
+    "toyId": 7,
+    "toyName": "Hot Wheels Track Set",
+    "brand": "Hot Wheels",
+    "sellerName": "Speed Racers",
+    "sellerEmail": "contact@speedracers.com",
+    "price": 39.99,
+    "discount": 5,
+    "finalPrice": 37.99,
+    "rating": 4.6,
+    "reviewsCount": 1100,
+    "availableQuantity": 35,
+    "stockStatus": "In Stock",
+    "ageRange": "5+ Years",
+    "subCategory": "Vehicles & Tracks",
+    "materials": ["Plastic", "Metal Car Components"],
+    "trackLength": "12 ft",
+    "tags": ["hot wheels", "racing", "cars", "track"],
+    "dimensions": {
+      "boxWidth": "15 in",
+      "boxHeight": "10 in",
+      "boxDepth": "3 in"
+    },
+    "description": "An exciting Hot Wheels track set featuring loops, jumps, and customizable racing circuits. Perfect for competitive racing, stunts, and creative track designs.",
+    "keyFeatures": [
+      "Multiple track pieces",
+      "2 Hot Wheels cars",
+      "Loop & jump sections",
+      "Encourages problem-solving"
+    ],
+    "whatsInsideTheBox": [
+      "Track pieces",
+      "2 Die-cast cars"
+    ],
+    "pictureURL": "https://i.ibb.co/XfPhmVh/8530728.jpg",
+    "galleryImages": [
+      "https://i.ibb.co/tZX0tVx/hw1.jpg",
+      "https://i.ibb.co/cLZYSdP/hw2.jpg"
+    ],
+    "shipping": {
+      "isFreeShipping": true,
+      "estimatedDelivery": "3–5 business days"
+    },
+    "returnPolicy": {
+      "returnWindow": "10 days",
+      "isReturnable": true
+    },
+    "createdAt": "2025-01-16T13:30:00Z"
+  },
     {
-        "toyId": 7,
-        "toyName": "Hot Wheels Track Set",
-        "sellerName": "Speed Racers",
-        "sellerEmail": "contact@speedracers.com",
-        "price": 39.99,
-        "rating": 4.6,
-        "availableQuantity": 35,
-        "description": "Exciting Hot Wheels track set with loops, jumps, and cars for endless racing fun. Includes multiple track pieces and two Hot Wheels cars to create custom racing circuits. Encourages problem-solving, creativity, and hand-eye coordination. Kids can compete with friends or enjoy solo play, experimenting with different layouts, loops, and speed challenges. Ideal for children aged 5 and up who love action-packed adventures.",
-        "pictureURL": "https://i.ibb.co.com/XfPhmVhT/8530728.jpg",
-        "subCategory": "Vehicles & Tracks"
-    }
+    "toyId": 8,
+    "toyName": "Interactive Robot Dog",
+    "brand": "RoboPets",
+    "sellerName": "Techie Toys",
+    "sellerEmail": "support@techietoys.com",
+    "price": 79.99,
+    "discount": 10,
+    "finalPrice": 71.99,
+    "rating": 4.7,
+    "reviewsCount": 860,
+    "availableQuantity": 40,
+    "stockStatus": "In Stock",
+    "ageRange": "5+ Years",
+    "subCategory": "Electronic Toys",
+    "materials": ["Plastic", "Electronic Components"],
+    "dimensions": {
+      "length": "10 in",
+      "width": "6 in",
+      "height": "8 in",
+      "weight": "0.9 kg"
+    },
+    "tags": ["robot", "interactive", "electronic", "pet", "smart toy"],
+    "description": "A smart robotic dog that responds to touch, sound, and voice commands. Moves, barks, and performs tricks while teaching kids about responsibility and STEM concepts.",
+    "keyFeatures": [
+      "Voice recognition and responsive actions",
+      "Programmable tricks",
+      "Rechargeable battery with 2-hour playtime",
+      "Durable design for indoor and light outdoor play"
+    ],
+    "whatsInsideTheBox": [
+      "Interactive Robot Dog",
+      "USB Charging Cable",
+      "Instruction Manual"
+    ],
+    "pictureURL": "https://i.ibb.co/3f1D7n2/robot-dog.jpg",
+    "galleryImages": [
+      "https://i.ibb.co/4F2jM91/robot-dog1.jpg",
+      "https://i.ibb.co/2c3fP8G/robot-dog2.jpg"
+    ],
+    "shipping": {
+      "isFreeShipping": true,
+      "estimatedDelivery": "3–6 business days"
+    },
+    "returnPolicy": {
+      "returnWindow": "15 days",
+      "isReturnable": true
+    },
+    "createdAt": "2025-01-17T09:00:00Z"
+  },
+
+  {
+    "toyId": 9,
+    "toyName": "Wooden Puzzle Castle",
+    "brand": "PuzzleMasters",
+    "sellerName": "Crafty Kids",
+    "sellerEmail": "info@craftykids.com",
+    "price": 34.99,
+    "discount": 0,
+    "finalPrice": 34.99,
+    "rating": 4.6,
+    "reviewsCount": 420,
+    "availableQuantity": 60,
+    "stockStatus": "In Stock",
+    "ageRange": "6+ Years",
+    "subCategory": "Educational Toys",
+    "materials": ["Wood", "Non-toxic Paint"],
+    "tags": ["puzzle", "wooden toy", "castle", "educational", "STEM"],
+    "dimensions": {
+      "length": "12 in",
+      "width": "8 in",
+      "height": "10 in",
+      "weight": "1.3 kg"
+    },
+    "description": "A wooden puzzle castle that challenges kids’ logic and hand-eye coordination. Includes 120 puzzle pieces to build a beautiful miniature castle while enhancing problem-solving and spatial reasoning.",
+    "keyFeatures": [
+      "120-piece wooden puzzle",
+      "Non-toxic and safe for children",
+      "Enhances creativity and problem-solving skills",
+      "Durable and reusable"
+    ],
+    "whatsInsideTheBox": [
+      "Wooden Puzzle Pieces",
+      "Instruction Sheet"
+    ],
+    "pictureURL": "https://i.ibb.co/WgD6cQq/wooden-castle.jpg",
+    "galleryImages": [
+      "https://i.ibb.co/7k8KcQ4/wooden-castle1.jpg",
+      "https://i.ibb.co/QN7x2zP/wooden-castle2.jpg"
+    ],
+    "shipping": {
+      "isFreeShipping": true,
+      "estimatedDelivery": "4–7 business days"
+    },
+    "returnPolicy": {
+      "returnWindow": "10 days",
+      "isReturnable": true
+    },
+    "createdAt": "2025-01-17T10:30:00Z"
+  },
+
+  {
+    "toyId": 10,
+    "toyName": "Kids Art & Craft Kit",
+    "brand": "Creative Minds",
+    "sellerName": "Artsy Kids Store",
+    "sellerEmail": "contact@artsykids.com",
+    "price": 24.99,
+    "discount": 5,
+    "finalPrice": 23.74,
+    "rating": 4.9,
+    "reviewsCount": 980,
+    "availableQuantity": 100,
+    "stockStatus": "In Stock",
+    "ageRange": "3+ Years",
+    "subCategory": "Arts & Crafts",
+    "materials": ["Paper", "Non-toxic Paint", "Glue", "Wooden Sticks"],
+    "tags": ["art", "craft", "creativity", "drawing", "painting"],
+    "dimensions": {
+      "length": "14 in",
+      "width": "10 in",
+      "height": "2 in",
+      "weight": "0.8 kg"
+    },
+    "description": "A complete art and craft kit for kids to explore their creativity. Includes paints, brushes, colored papers, stencils, and craft tools. Encourages fine motor skills, imagination, and artistic expression.",
+    "keyFeatures": [
+      "Includes 50+ art and craft items",
+      "Safe and non-toxic materials",
+      "Supports creativity and fine motor skill development",
+      "Compact and portable kit"
+    ],
+    "whatsInsideTheBox": [
+      "Colored Papers",
+      "Non-toxic Paints",
+      "Brushes",
+      "Stencils",
+      "Craft Tools"
+    ],
+    "pictureURL": "https://i.ibb.co/9wH8Y3k/art-craft-kit.jpg",
+    "galleryImages": [
+      "https://i.ibb.co/4N9m8vM/art-craft1.jpg",
+      "https://i.ibb.co/WfxP7mK/art-craft2.jpg"
+    ],
+    "shipping": {
+      "isFreeShipping": true,
+      "estimatedDelivery": "2–5 business days"
+    },
+    "returnPolicy": {
+      "returnWindow": "14 days",
+      "isReturnable": true
+    },
+    "createdAt": "2025-01-17T11:00:00Z"
+  }
+  
 ]

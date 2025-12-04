@@ -9,18 +9,22 @@ const Navbar = () => {
   const { user, signoutUserFunc, loading } = useContext(AuthContext);
 
   const handleLogOut = () => {
-    console.log("User trying to LogOut");
     signoutUserFunc()
-      .then(() => {
-        toast.success("Logout Successful!");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+      .then(() => toast.success("Logout Successful!"))
+      .catch((error) => console.log(error));
   };
 
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "All Toys", path: "/all-toys" },
+    { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
+    { name: "Services", path: "/services" },
+  ];
+
   return (
-    <nav className="bg-base-100 shadow-md px-4 py-4 md:px-8">
+    <nav className="bg-base-100 sticky top-0 shadow-md px-4 py-4 md:px-8 z-50">
+
       <div className="flex justify-between items-center">
         {/* Brand */}
         <NavLink to="/" className="text-3xl font-bold text-primary">
@@ -29,39 +33,44 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary font-semibold"
-                : "text-base-content hover:text-primary"
-            }
-          >
-            Home
-          </NavLink>
-
-          <NavLink
-            to="/profile"
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary font-semibold"
-                : "text-base-content hover:text-primary"
-            }
-          >
-            My Profile
-          </NavLink>
-
-          {user && (
+          {navLinks.map((link) => (
             <NavLink
-              to="/my-cart"
+              key={link.name}
+              to={link.path}
               className={({ isActive }) =>
                 isActive
                   ? "text-primary font-semibold"
                   : "text-base-content hover:text-primary"
               }
             >
-              MyCart
+              {link.name}
             </NavLink>
+          ))}
+
+          {/* Authenticated Links */}
+          {user && (
+            <>
+              <NavLink
+                to="/my-cart"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-primary font-semibold"
+                    : "text-base-content hover:text-primary"
+                }
+              >
+                MyCart
+              </NavLink>
+              <NavLink
+                to="/profile"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-primary font-semibold"
+                    : "text-base-content hover:text-primary"
+                }
+              >
+                My Profile
+              </NavLink>
+            </>
           )}
         </div>
 
@@ -81,13 +90,11 @@ const Navbar = () => {
                   src={user ? user.photoURL : userIcon}
                   alt="User"
                 />
-
-                {/* Display Name Tooltip */}
                 {user && (
-                     <span
-                    className="absolute flex items-center bottom-full -top-2  -left-[65px] -translate-x-1/2 mb-2
+                  <span
+                    className="absolute flex items-center bottom-full -top-2 -left-[65px] mb-2
                     bg-gradient-to-r from-pink-500 to-rose-400 text-white text-sm font-semibold
-                    px-3 py-5 rounded-lg shadow-lg opacity-0 group-hover:opacity-100
+                    px-3 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100
                     transition-opacity duration-300 whitespace-nowrap"
                   >
                     {user.displayName}
@@ -120,6 +127,7 @@ const Navbar = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-2xl font-bold"
+            aria-label="Toggle Menu"
           >
             ☰
           </button>
@@ -145,7 +153,6 @@ const Navbar = () => {
                     alt="User"
                   />
                 </div>
-
                 {user && (
                   <div className="w-full mb-1 text-center">
                     <span className="bg-gradient-to-r from-pink-500 to-rose-400 text-white p-2 rounded">
@@ -157,48 +164,57 @@ const Navbar = () => {
 
               {/* Navigation Links */}
               <div className="flex flex-col items-center gap-2">
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-primary font-semibold"
-                      : "text-base-content hover:text-primary"
-                  }
-                >
-                  Home
-                </NavLink>
-
-                <NavLink
-                  to="/profile"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-primary font-semibold"
-                      : "text-base-content hover:text-primary"
-                  }
-                >
-                  My Profile
-                </NavLink>
-
-                {user && (
+                {navLinks.map((link) => (
                   <NavLink
-                    to="/my-cart"
+                    key={link.name}
+                    to={link.path}
+                    onClick={() => setIsOpen(false)}
                     className={({ isActive }) =>
                       isActive
                         ? "text-primary font-semibold"
                         : "text-base-content hover:text-primary"
                     }
                   >
-                    MyCart
+                    {link.name}
                   </NavLink>
+                ))}
+
+                {user && (
+                  <>
+                    <NavLink
+                      to="/my-cart"
+                      onClick={() => setIsOpen(false)}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-primary font-semibold"
+                          : "text-base-content hover:text-primary"
+                      }
+                    >
+                      MyCart
+                    </NavLink>
+                    <NavLink
+                      to="/profile"
+                      onClick={() => setIsOpen(false)}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-primary font-semibold"
+                          : "text-base-content hover:text-primary"
+                      }
+                    >
+                      My Profile
+                    </NavLink>
+                  </>
                 )}
               </div>
-              
 
               {/* Auth Buttons */}
               <div className="flex items-center gap-2 mt-2">
                 {user ? (
                   <button
-                    onClick={handleLogOut}
+                    onClick={() => {
+                      handleLogOut();
+                      setIsOpen(false);
+                    }}
                     className="px-10 py-2 w-full rounded-lg text-center bg-[#EB1551] hover:bg-[#C71145] text-white font-semibold transition-colors duration-200"
                   >
                     LogOut
@@ -206,6 +222,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to="/auth/login"
+                    onClick={() => setIsOpen(false)}
                     className="px-10 py-2 w-full text-center rounded-lg bg-[#EB1551] hover:bg-[#C71145] text-white font-semibold transition-colors duration-200"
                   >
                     Login/Register
